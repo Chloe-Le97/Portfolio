@@ -7,99 +7,212 @@
     <title>Porfolio</title>
   </head>
   <body>
-    <section id="banner">
-      <div class="banner-container">
-        <div class="banner-title-container">
-          <div class="name">Chloe Le</div>
-          <div class="front-end">Front-end developer</div>
+    <header>
+      <div id="menu-bar">
+        <div id="menu" onClick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
         </div>
+        <ul class="nav" id="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#project">My Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
       </div>
-    </section>
-    <section id="about">
-      <div class="aboutMe">About Me</div>
-      <blockquote class="quote">
-        <p>
-          "Luck is what happens when preparation meets opportunity".
-        </p>
-        <p>-SENECA</p>
-      </blockquote>
-      <div class="story">
-        <div class="myStoryImg">
-          <img src="asset/myStory.jpg" class="storyImg" />
-        </div>
-        <div class="myStory">
-          Hi, I am a self-taught Web developer with background in Chemical
-          Engineering. From the love of building beautiful and useful websites,
-          I have continously equiped myself with coding and designing skills.
-          With the eager to learn new things and the spirit of not affraiding to
-          lose, I am challenging myself to become a professional Web developer.
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="mySkill">
-        <div class="mySkill-title">MY SKILLS</div>
-        <div class="programing-skill">
-          <img src="asset/html.png" />
-          <div class="description">HTML</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/css.png" />
-          <div class="description">CSS</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/js.png" />
-          <div class="description">Javascript</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/react.png" />
-          <div class="description">ReactJS</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/figma.png" />
-          <div class="description">Figma</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/firebase.png" />
-          <div class="description">Firebase</div>
-        </div>
-        <div class="programing-skill">
-          <img src="asset/git.png" />
-          <div class="description">Git</div>
-        </div>
-      </div>
-    </section>
-    <section id="project">
-      <div class="project-container">
-        <div class="project-title">MY PROJECT</div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="contactMe">
-        <div class="contact-title">FIND ME AT</div>
-        <div class="contact-container">
-          <div class="contact-infor">
-            <a href="mailto:Chloe.Le1902@gmail.com"
-              ><img src="asset/gmail.png"
-            /></a>
-            <div class="address">Chloe.Le1902@gmail.com</div>
-          </div>
-          <div class="contact-infor">
-            <a href="https://github.com/Chloe-Le97" target="_blank"
-              ><img src="asset/git2.png" class="git"
-            /></a>
-            <div class="address">Chloe-Le97</div>
-          </div>
-          <div class="contact-infor">
-            <a
-              href="https://www.linkedin.com/in/chloe-le-071125168/"
-              target="_blank"
-              ><img src="asset/linkedin.png"
-            /></a>
-            <div class="address">Chloe-Le-071125168</div>
+      <div class="menu-bg" id="menu-bg"></div>
+    </header>
+    <div id="main">
+      <section id="banner">
+        <div class="banner-container">
+          <div class="banner-title-container">
+            <div class="name">Chloe Le</div>
+            <div class="front-end">Front-end developer</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="about">
+        <div class="aboutMe">About Me</div>
+        <blockquote class="quote">
+          <p>
+            "Luck is what happens when preparation meets opportunity".
+          </p>
+          <p>-SENECA</p>
+        </blockquote>
+        <div class="story">
+          <div class="myStoryImg">
+            <img src="asset/myStory.jpg" class="storyImg" />
+          </div>
+          <div class="myStory">
+            Hi, I am a self-taught Web developer with background in Chemical
+            Engineering. From the love of building beautiful and useful
+            websites, I have continously equiped myself with coding and
+            designing skills. With the eager to learn new things and the spirit
+            of not affraiding to lose, I am challenging myself to become a
+            professional Web developer.
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="mySkill">
+          <div class="mySkill-title">MY SKILLS</div>
+          <div class="programing-skill">
+            <img src="asset/html.png" />
+            <div class="description">HTML</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/css.png" />
+            <div class="description">CSS</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/js.png" />
+            <div class="description">Javascript</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/react.png" />
+            <div class="description">ReactJS</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/figma.png" />
+            <div class="description">Figma</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/firebase.png" />
+            <div class="description">Firebase</div>
+          </div>
+          <div class="programing-skill">
+            <img src="asset/git.png" />
+            <div class="description">Git</div>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <div class="project-title">MY PROJECTS</div>
+        <div class="project-container">
+          <div class="border1">
+            <div class="border2">
+              <a href="https://to-do-list-with-react.web.app/" target="_blank"
+                ><img src="asset/finish.png" width="100px" height="100px"
+              /></a>
+              <div class="project-des">
+                <ul>
+                  <li>Advanced to do list.</li>
+                  <li>ReactJS.</li>
+                  <li>Firebase Authentication.</li>
+                  <li>Firebase Realtime Database.</li>
+                  <li>Firebase Hosting.</li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div class="border1">
+            <div class="border2">
+              <a
+                href="https://chloe-le97.github.io/react-weather-forecast/"
+                target="_blank"
+                ><img src="asset/weather.png" width="100px" height="100px"
+              /></a>
+              <div class="project-des">
+                <ul>
+                  <li>ReactJS.</li>
+                  <li>Fetch API.</li>
+                  <li>Weather at current position.</li>
+                  <li>Weather at searched cities.</li>
+                  <li>Github page Hosting.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border1 border3">
+            <div class="border2">
+              <a href="http://katherine-bakery.atwebpages.com/" target="_blank"
+                ><img src="asset/bakery.png" width="105px" height="100px"
+              /></a>
+              <div class="project-des">
+                <ul>
+                  <li>Katherine Bakery.</li>
+                  <li>Figma design.</li>
+                  <li>HTML, CSS, Javascript.</li>
+                  <li>Responsive web design.</li>
+                  <li>Page Hosting.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border1 border3">
+            <div class="border2">
+              <a
+                href="https://github.com/Chloe-Le97/crown-clothing"
+                target="_blank"
+                ><img
+                  src="asset/crwn.png"
+                  width="90px"
+                  height="90px"
+                  class="crown"
+              /></a>
+              <div class="project-des">
+                <ul>
+                  <li>Clothing online store.</li>
+                  <li>ReactJS, Redux.</li>
+                  <li>Firebase Authentication.</li>
+                  <li>Firebase Realtime Database.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
+      <section id="contact">
+        <div class="contactMe">
+          <div class="contact-title">FIND ME AT</div>
+          <div class="contact-container">
+            <div class="contact-infor">
+              <a href="mailto:Chloe.Le1902@gmail.com"
+                ><img src="asset/gmail.png" class="gmail"
+              /></a>
+              <div class="address">Chloe.Le1902@gmail.com</div>
+            </div>
+            <div class="contact-infor">
+              <a href="https://github.com/Chloe-Le97" target="_blank"
+                ><img src="asset/git2.png" class="git"
+              /></a>
+              <div class="address">Chloe-Le97</div>
+            </div>
+            <div class="contact-infor">
+              <a
+                href="https://www.linkedin.com/in/chloe-le-071125168/"
+                target="_blank"
+                ><img src="asset/linkedin.png" class="gmail"
+              /></a>
+              <div class="address">Chloe-Le-071125168</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      function onClickMenu() {
+        document.getElementById("menu").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("changenav");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+        document.getElementById("main").classList.toggle("change-body");
+      }
+      window.addEventListener("scroll", function (event) {
+        event.preventDefault();
+        if (window.scrollY <= 480) {
+          document
+            .querySelector(".banner-title-container")
+            .classList.add("first");
+        } else {
+          document
+            .querySelector(".banner-title-container")
+            .classList.remove("first");
+        }
+      });
+    </script>
   </body>
 </html>
