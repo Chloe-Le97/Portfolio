@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 .banner-title-container {
-  padding: 10px;
+  padding: 0.625rem;
   width: 20%;
   margin: 0 auto;
   color: white;
@@ -26,10 +29,26 @@ body::-webkit-scrollbar {
   background-color: #c4c4c4c7;
   border-radius: 5px;
 }
+.first {
+  padding: 0.625rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+  top: 50vh;
+  text-align: center;
+  background-color: #c4c4c4c7;
+  border-radius: 5px;
+}
+.name {
+  font-size: 3em;
+}
+.front-end {
+  font-size: 1.25em;
+}
 #menu {
   position: fixed;
-  width: 35px;
-  height: 30px;
+  width: 2.1875rem;
+  height: 1.875rem;
   margin: 30px 0 20px 40px;
   cursor: pointer;
 }
@@ -67,7 +86,7 @@ body::-webkit-scrollbar {
 .nav li a {
   color: white;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 .nav li a:hover {
   font-weight: bold;
@@ -78,7 +97,7 @@ body::-webkit-scrollbar {
 }
 .nav {
   padding: 0;
-  margin: 70px 40px;
+  margin: 4.375rem 2.5rem;
   transition: 0.3s ease;
   display: none;
 }
@@ -92,8 +111,8 @@ body::-webkit-scrollbar {
   transition: 0.3s ease;
 }
 .change-bg {
-  width: 750px;
-  height: 750px;
+  width: 46.875rem;
+  height: 46.875rem;
   transform: translate(-60%, -30%);
 }
 #menu-bar {
@@ -105,18 +124,13 @@ body::-webkit-scrollbar {
   left: 0;
   position: fixed;
 }
-.name {
-  font-size: 48px;
-}
-.front-end {
-  font-size: 20px;
-}
+
 .quote {
   position: relative;
-  top: 160px;
+  top: 10rem;
   text-align: center;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 #about {
   position: relative;
@@ -127,7 +141,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 75rem;
   background-image: url("asset/aboutMe.png");
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
   background-repeat: no-repeat;
@@ -136,22 +150,20 @@ body::-webkit-scrollbar {
   filter: grayscale(70%);
 }
 .aboutMe {
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
   position: relative;
-  top: 150px;
+  top: 9.375rem;
 }
 .story {
   width: 80%;
   position: relative;
-  top: 230px;
+  top: 14.375rem;
   margin: 0 auto;
   text-align: center;
-  width: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 20px;
-  font-size: 24px;
 }
 .myStoryImg {
   display: flex;
@@ -170,8 +182,8 @@ body::-webkit-scrollbar {
   width: 80%;
   /* margin: 0 auto; */
   text-align: justify;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -179,9 +191,9 @@ body::-webkit-scrollbar {
 
 #skills {
   position: relative;
-  top: 85vh;
+  top: 35rem;
   width: 100%;
-  height: 941px;
+  height: 59rem;
   background-image: url("asset/Group9.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +205,7 @@ body::-webkit-scrollbar {
 }
 .mySkill {
   width: 40%;
-  margin-left: 90px;
+  margin-left: 5.625rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   grid-column-gap: 70px;
@@ -202,11 +214,11 @@ body::-webkit-scrollbar {
 }
 
 .mySkill-title {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   grid-column: 1/-1;
   text-align: center;
-  padding: 40px;
+  padding: 2.5rem;
 }
 .programing-skill img {
   margin: 0 auto;
@@ -214,13 +226,13 @@ body::-webkit-scrollbar {
 .description {
   text-align: center;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 #project {
   position: relative;
-  top: 60vh;
+  top: 25rem;
   width: 100%;
-  height: 941px;
+  height: 59rem;
   background-image: url("asset/pexels-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,23 +242,23 @@ body::-webkit-scrollbar {
 }
 .project-title {
   position: relative;
-  top: 190px;
+  top: 14.875rem;
   color: white;
-  font-size: 48px;
+  font-size: 3rem;
 }
 .project-container {
   position: relative;
-  top: -130px;
+  top: 18rem;
   width: 90%;
-  margin: 400px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .border1 {
   border: 4px solid black;
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -259,8 +271,8 @@ body::-webkit-scrollbar {
 .border2 {
   margin: 0 auto;
   border: 4px solid black;
-  width: 130px;
-  height: 130px;
+  width: 8.125rem;
+  height: 8.125rem;
 }
 .project-des {
   visibility: hidden;
@@ -273,11 +285,13 @@ body::-webkit-scrollbar {
 .border2 img {
   position: relative;
   top: 20px;
+  width: 80%;
+  height: 80%;
 }
 .border1:hover {
   display: block;
-  width: 200px;
-  height: 230px;
+  width: 12.5rem;
+  height: 14.375rem;
   box-shadow: 0 0 25px rgb(255, 255, 255);
   border: 4px solid rgba(0, 0, 0, 0.753);
   background: rgba(245, 245, 245, 0.849);
@@ -292,10 +306,14 @@ body::-webkit-scrollbar {
   justify-content: space-around;
   border-radius: 5px;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .border1:hover .border2 a {
   margin: 0 auto;
+}
+.border1:hover .border2 img {
+  width: 7rem;
+  height: 7rem;
 }
 .border1:hover .crown {
   box-shadow: 0 0 25px rgb(255, 255, 255);
@@ -304,14 +322,14 @@ body::-webkit-scrollbar {
 }
 .border1:hover .project-des {
   visibility: visible;
-  margin-top: 20px;
-  line-height: 20px;
+  margin-top: 1rem;
+  line-height: 1.25rem;
 }
 #contact {
   position: relative;
-  top: 40vh;
+  top: 17rem;
   width: 100%;
-  height: 150vh;
+  height: 60rem;
   background-image: url("asset/Group10.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -324,27 +342,27 @@ body::-webkit-scrollbar {
 }
 .contactMe {
   position: relative;
-  top: 50px;
+  top: 3.125rem;
   width: 70%;
   margin: 0 auto;
 }
 .contact-title {
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   text-align: center;
 }
 .contact-container {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-column-gap: 5px;
   grid-row-gap: 30px;
   text-align: center;
 }
 
 .address {
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 0.9375rem;
+  font-size: 1.5rem;
   color: white;
 }
 .git {
@@ -356,46 +374,27 @@ body::-webkit-scrollbar {
   width: 75px;
   height: 60px;
 }
+.contact-infor img {
+  height: 50%;
+}
 .git:hover {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.747);
   width: 65px;
   height: 65px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 13px;
+  }
   .banner-title-container {
     width: 50%;
   }
-  #skills {
-    top: 30vh;
-  }
-
-  #about:before {
-    height: 240vh;
+  .story {
+    width: 95%;
   }
   .myStory {
+    width: 100%;
     margin: 0 auto;
-  }
-  #project {
-    top: 0;
-  }
-  #contact {
-    top: -25vh;
-  }
-  .contactMe {
-    width: 80%;
-  }
-  .border1:nth-child(2),
-  .border1:nth-child(3) {
-    position: relative;
-    top: 0;
-  }
-  .project-title {
-    position: relative;
-    top: 120px;
-  }
-  .project-container {
-    position: relative;
-    top: 0;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -409,7 +408,7 @@ body::-webkit-scrollbar {
   }
   #project {
     position: relative;
-    top: -60px;
+    top: -30px;
     height: 1250px;
   }
   #skills {
@@ -425,12 +424,12 @@ body::-webkit-scrollbar {
   }
   .project-container {
     position: relative;
-    top: -150px;
+    top: 220px;
     display: block;
   }
   .project-des {
     visibility: visible;
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
   .border2 {
     border: none;
@@ -438,9 +437,48 @@ body::-webkit-scrollbar {
     height: fit-content;
     display: flex;
     justify-content: center;
+    text-align: left;
   }
   .border1 {
     height: fit-content;
     width: 100%;
+  }
+  .border1:nth-child(2),
+  .border1:nth-child(3) {
+    position: relative;
+    top: 0;
+  }
+  .border1:hover .project-des {
+    visibility: visible;
+    margin-top: 1rem;
+    line-height: 1.25rem;
+    margin-left: 25px;
+  }
+  .border1:hover {
+    height: fit-content;
+    width: 100%;
+  }
+  .border1:hover .crown {
+    box-shadow: 0 0 25px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0;
+  }
+  .crown {
+    margin-top: -10px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  html {
+    font-size: 22px;
+  }
+  .banner-title-container {
+    width: 20%;
+  }
+  .project-container {
+    width: 60%;
+    position: relative;
+  }
+  .contact-infor img {
+    height: 100px;
   }
 }

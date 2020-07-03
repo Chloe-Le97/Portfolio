@@ -201,6 +201,18 @@
         document.getElementById("menu-bg").classList.toggle("change-bg");
         document.getElementById("main").classList.toggle("change-body");
       }
+      window.addEventListener("scroll", function (event) {
+        event.preventDefault();
+        if (window.scrollY <= 480) {
+          document
+            .querySelector(".banner-title-container")
+            .classList.add("first");
+        } else {
+          document
+            .querySelector(".banner-title-container")
+            .classList.remove("first");
+        }
+      });
     </script>
   </body>
 </html>
