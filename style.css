@@ -207,7 +207,7 @@ body::-webkit-scrollbar {
   width: 40%;
   margin-left: 5.625rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(3.75rem, 1fr));
   grid-column-gap: 70px;
   grid-row-gap: 40px;
   justify-items: center;
@@ -222,6 +222,28 @@ body::-webkit-scrollbar {
 }
 .programing-skill img {
   margin: 0 auto;
+  transition: 2s linear;
+}
+.flip:hover {
+  transform: rotateY(360deg);
+}
+.react:hover {
+  transform: rotateZ(360deg);
+}
+.scale:hover {
+  transform: scale(1.2);
+}
+.trans:hover {
+  animation: shake 1s infinite;
+  animation-direction: alternate;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
 }
 .description {
   text-align: center;
@@ -245,6 +267,7 @@ body::-webkit-scrollbar {
   top: 14.875rem;
   color: white;
   font-size: 3rem;
+  font-family: "Lora", serif;
 }
 .project-container {
   position: relative;
@@ -276,6 +299,7 @@ body::-webkit-scrollbar {
 }
 .project-des {
   visibility: hidden;
+  font-family: "Lora", serif;
 }
 .border1:nth-child(2),
 .border1:nth-child(3) {
@@ -297,8 +321,6 @@ body::-webkit-scrollbar {
   background: rgba(245, 245, 245, 0.849);
 }
 .border1:hover .border2 {
-  /* position: relative;
-  top: 70px; */
   width: 100%;
   border: none;
   display: flex;
