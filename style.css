@@ -435,7 +435,7 @@ body::-webkit-scrollbar {
   }
   #skills {
     position: relative;
-    top: 40vh;
+    top: 30vh;
   }
   #contact {
     top: -40vh;
