@@ -19,16 +19,16 @@
           <div id="bar3" class="bar"></div>
         </div>
         <ul class="nav" id="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">My Skills</a></li>
-          <li><a href="#project">My Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#" onclick="CloseMenu()">Home</a></li>
+          <li><a href="#about" onclick="CloseMenu()">About Me</a></li>
+          <li><a href="#skills" onclick="CloseMenu()">My Skills</a></li>
+          <li><a href="#project" onclick="CloseMenu()">My Projects</a></li>
+          <li><a href="#contact" onclick="CloseMenu()">Contact Me</a></li>
         </ul>
       </div>
       <div class="menu-bg" id="menu-bg"></div>
     </header>
-    <div id="main">
+    <div id="main" onclick="CloseMenu()">
       <section id="banner">
         <div class="banner-container">
           <div class="banner-title-container">
@@ -204,6 +204,12 @@
         document.getElementById("nav").classList.toggle("changenav");
         document.getElementById("menu-bg").classList.toggle("change-bg");
         document.getElementById("main").classList.toggle("change-body");
+      }
+      function CloseMenu() {
+        document.getElementById("menu").classList.remove("change");
+        document.getElementById("nav").classList.remove("changenav");
+        document.getElementById("menu-bg").classList.remove("change-bg");
+        document.getElementById("main").classList.remove("change-body");
       }
       window.addEventListener("scroll", function (event) {
         event.preventDefault();
