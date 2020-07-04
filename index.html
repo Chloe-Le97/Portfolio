@@ -204,14 +204,12 @@
         document.getElementById("nav").classList.toggle("changenav");
         document.getElementById("menu-bg").classList.toggle("change-bg");
         document.getElementById("main").classList.toggle("change-body");
-        document.querySelector('body').style.overflow=hidden;
       }
       function CloseMenu() {
         document.getElementById("menu").classList.remove("change");
         document.getElementById("nav").classList.remove("changenav");
         document.getElementById("menu-bg").classList.remove("change-bg");
         document.getElementById("main").classList.remove("change-body");
-        document.querySelector('body').style.overflow=visible;
       }
       window.addEventListener("scroll", function (event) {
         event.preventDefault();
