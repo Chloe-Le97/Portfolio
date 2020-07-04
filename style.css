@@ -83,6 +83,9 @@ body::-webkit-scrollbar {
 .change-body {
   filter: blur(5px);
 }
+.change-bod {
+  overflow: hidden;
+}
 .nav li a {
   color: white;
   text-decoration: none;
