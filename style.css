@@ -342,8 +342,6 @@ body::-webkit-scrollbar {
   height: 7rem;
 }
 .border1:hover .crown {
-  box-shadow: 0 0 25px rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.856);
   margin-top: -50px;
 }
 .border1:hover .project-des {
@@ -496,8 +494,6 @@ body::-webkit-scrollbar {
     width: 100%;
   }
   .border1:hover .crown {
-    box-shadow: 0 0 25px rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
     margin-top: 0;
   }
   .crown {
