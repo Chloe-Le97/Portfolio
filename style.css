@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   height: fit-content;
+  font-family: "Poppins", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -182,6 +183,7 @@ body::-webkit-scrollbar {
 }
 
 .myStory {
+  font-family: "Lora", serif;
   width: 80%;
   padding: -25px;
   /* margin: 0 auto; */
@@ -256,109 +258,93 @@ body::-webkit-scrollbar {
 }
 #project {
   position: relative;
-  top: 25rem;
+  top: 28rem;
   width: 100%;
-  height: 59rem;
-  background-image: url("asset/pexels-photo.jpg");
+  height: 70rem;
+  background-image: url("asset/mountain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 88%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 93%);
   text-align: center;
 }
-.project-title {
+.project_header {
   position: relative;
-  top: 14.875rem;
-  color: white;
-  font-size: 3rem;
-  font-family: "Lora", serif;
+  top: 8.75rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.project-container {
+.project_container {
+  /* margin-top: 100px; */
+  height: 18.25rem;
+  width: 23.125rem;
+  background-color: white;
+  box-shadow: 9px 14px 19px -9px rgba(0, 0, 0, 1);
+}
+.project_background {
+  height: 12.5rem;
+  width: 23.125rem;
+}
+.project_image {
   position: relative;
-  top: 18rem;
+  text-align: center;
+  color: white;
+  width: 23.125rem;
+}
+.project_image a {
+  text-decoration: none;
+  color: white;
+}
+.project_title {
+  position: absolute;
+  background-color: rgba(82, 82, 82, 0.514);
+  font-size: 1.5625rem;
+  z-index: 2;
+  height: 12.5rem;
+  width: 23.125rem;
+  text-align: center;
+  line-height: 200px;
+}
+.project_skills {
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-around;
+}
+.project_des_title {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+.project_skill {
+  min-width: 60px;
+  border: none;
+  background-color: rgb(88, 88, 88);
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+}
+.my_project {
+  position: relative;
+  top: 12rem;
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.border1 {
-  border: 4px solid black;
-  width: 9.375rem;
-  height: 9.375rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-row-gap: 50px;
+  justify-items: center;
   align-items: center;
-  background: rgba(245, 245, 245, 0.63);
-  border-radius: 5px;
-  margin-top: 10px;
-  transition-property: height;
-  transition-duration: 1s;
-}
-.border2 {
-  margin: 0 auto;
-  border: 4px solid black;
-  width: 8.125rem;
-  height: 8.125rem;
-}
-.project-des {
-  visibility: hidden;
-  font-family: "Lora", serif;
-}
-.border1:nth-child(2),
-.border1:nth-child(3) {
-  position: relative;
-  top: 100px;
-}
-.border2 img {
-  position: relative;
-  top: 20px;
-  width: 80%;
-  height: 80%;
-}
-.border1:hover {
-  display: block;
-  width: 12.5rem;
-  height: 14.375rem;
-  box-shadow: 0 0 25px rgb(255, 255, 255);
-  border: 4px solid rgba(0, 0, 0, 0.753);
-  background: rgba(245, 245, 245, 0.849);
-}
-.border1:hover .border2 {
-  width: 100%;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-radius: 5px;
-  text-align: left;
-  font-size: 1.125rem;
-}
-.border1:hover .border2 a {
-  margin: 0 auto;
-}
-.border1:hover .border2 img {
-  width: 7rem;
-  height: 7rem;
-}
-.border1:hover .crown {
-  margin-top: -50px;
-}
-.border1:hover .project-des {
-  visibility: visible;
-  margin-top: 1rem;
-  line-height: 1.25rem;
 }
 #contact {
   position: relative;
-  top: 17rem;
+  top: 21rem;
   width: 100%;
+  /* height: max-content; */
   height: 60rem;
   background-image: url("asset/Group10.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);
 
   display: flex;
   flex-direction: row;
@@ -426,8 +412,30 @@ body::-webkit-scrollbar {
   .nav li a {
     font-size: 23px;
   }
+  .my_project {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+  #project {
+    position: relative;
+    height: 2200px !important;
+  }
+  .project_header {
+    position: relative;
+    top: 13.75rem;
+  }
+  .my_project {
+    position: relative;
+    top: 15rem;
+  }
+}
+@media only screen and (max-width: 770px) {
   .change-bg {
     width: 650px;
     height: 650px;
@@ -438,13 +446,13 @@ body::-webkit-scrollbar {
     position: relative;
     top: -60px;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-column-gap: 30px;
   }
   #project {
     position: relative;
     top: -30px;
-    height: 1250px;
+    height: 230vh;
   }
   #skills {
     position: relative;
@@ -453,51 +461,11 @@ body::-webkit-scrollbar {
   #contact {
     top: -40vh;
   }
-  .project-title {
-    position: relative;
-    top: 200px;
-  }
-  .project-container {
-    position: relative;
-    top: 220px;
-    display: block;
-  }
-  .project-des {
-    visibility: visible;
-    /* margin-left: 25px; */
-  }
-  .border2 {
-    border: none;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-  }
-  .border1 {
-    height: fit-content;
-    width: 100%;
-  }
-  .border1:nth-child(2),
-  .border1:nth-child(3) {
-    position: relative;
-    top: 0;
-  }
-  .border1:hover .project-des {
-    visibility: visible;
-    margin-top: 1rem;
-    line-height: 1.25rem;
-    margin-left: 25px;
-  }
-  .border1:hover {
-    height: fit-content;
-    width: 100%;
-  }
-  .border1:hover .crown {
-    margin-top: 0;
-  }
-  .crown {
-    margin-top: -10px;
+  .my_project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-content: center;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -506,12 +474,5 @@ body::-webkit-scrollbar {
   }
   .banner-title-container {
     width: 20%;
-  }
-  .project-container {
-    width: 60%;
-    position: relative;
-  }
-  .contact-infor img {
-    height: 100px;
   }
 }
