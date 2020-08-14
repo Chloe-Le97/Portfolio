@@ -227,6 +227,7 @@ body::-webkit-scrollbar {
   padding: 2.5rem;
 }
 .programing-skill img {
+  display: block;
   margin: 0 auto;
   transition: 2s linear;
 }
