@@ -109,11 +109,18 @@
                 <div class="project_skill">Firebase</div>
                 <div class="project_skill">Material UI</div>
               </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
             </div>
           </div>
           <div class="project_container">
             <div class="project_image">
-              <a href="https://chat-app-b62b2.web.app/" target="_blank"><div class='project_title'>Penguime</div></a>
+            <a href="https://chat-app-b62b2.web.app/" target="_blank">
+              <div class='project_title'>Penguime</div>
+            </a>
               <img src='./asset/penguime.jpg' class="project_background"></img>
             </div>
             <div class="project_des">
@@ -123,6 +130,14 @@
                 <div class="project_skill">Authentication</div>
                 <div class="project_skill">Database</div>
                 <div class="project_skill">Figma</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
               </div>
             </div>
           </div>
@@ -139,6 +154,14 @@
                 <div class="project_skill">Firebase</div>
                 <div class="project_skill">Sass</div>
               </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
+              </div>
             </div>
           </div>
           <div class="project_container">
@@ -154,6 +177,14 @@
                 <div class="project_skill">Javascript</div>
                 <div class="project_skill">Figma</div>
               </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
+              </div>
             </div>
           </div>
           <div class="project_container">
@@ -168,6 +199,14 @@
                 <div class="project_skill">Authentication</div>
                 <div class="project_skill">Database</div>
               </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
+              </div>
             </div>
           </div>
           <div class="project_container">
@@ -180,6 +219,14 @@
               <div class="project_skills">
                 <div class="project_skill">ReactJS</div>
                 <div class="project_skill">Fetch API</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/instagram-clone" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
               </div>
             </div>
           </div>
@@ -240,6 +287,35 @@
             .classList.remove("first");
         }
       });
+      const slider = document.querySelector(".my_project");
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      slider.addEventListener('mousedown',(e)=>{
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        console.log(startX);
+      })
+
+      slider.addEventListener('mouseleave',()=>{
+        isDown = false;
+      })
+
+      slider.addEventListener('mouseup',()=>{
+        isDown = false
+    
+      })
+
+      slider.addEventListener('mousemove',(e)=>{
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        console.log(x,startX);
+        const walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+      })
     </script>
   </body>
 </html>
