@@ -285,7 +285,6 @@ body::-webkit-scrollbar {
   box-shadow: -2px 8px 28px -11px rgba(41, 41, 41, 1);
   /* transform: scale(1.07); */
   z-index: 1;
-  margin-left: 40px;
 }
 .project_container:hover {
   transform: scale(1.07);
@@ -358,7 +357,7 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-row-gap: 80px;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   /* padding: 10px; */
 }
@@ -446,7 +445,7 @@ body::-webkit-scrollbar {
     font-size: 23px;
   }
   .my_project {
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -457,17 +456,10 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 600px) {
   #skills {
     position: relative;
-    top: 20rem !important;
+    top: 17rem !important;
     width: 100%;
     height: 59rem;
-    background-image: url("asset/Group9.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     clip-path: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   #project {
     position: relative;
@@ -520,12 +512,14 @@ body::-webkit-scrollbar {
     top: -40vh;
   }
   .my_project {
+    width: 100%;
     position: relative;
     top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    align-content: center;
+    grid-column-gap: 0;
+    /* justify-items: start;
+    align-content: flex-start; */
   }
 }
 @media only screen and (min-width: 1500px) {
