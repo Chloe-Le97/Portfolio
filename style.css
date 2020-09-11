@@ -550,12 +550,12 @@ body::-webkit-scrollbar {
   .my_project {
     position: relative;
     top: 15rem;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-column-gap: 50px;
-    grid-row-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
     justify-items: center;
     align-items: center;
   }
