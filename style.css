@@ -356,7 +356,8 @@ body::-webkit-scrollbar {
   /* height: 20rem; */
   /* white-space: nowrap; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap:30px,
   grid-row-gap: 80px;
   justify-content: center;
   align-items: center;
