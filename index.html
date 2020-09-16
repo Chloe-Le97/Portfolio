@@ -275,47 +275,8 @@
         document.getElementById("main").classList.remove("change-body");
         document.querySelector("body").classList.remove("change-bod");
       }
-      window.addEventListener("scroll", function (event) {
-        event.preventDefault();
-        if (window.scrollY <= 480) {
-          document
-            .querySelector(".banner-title-container")
-            .classList.add("first");
-        } else {
-          document
-            .querySelector(".banner-title-container")
-            .classList.remove("first");
-        }
-      });
-      const slider = document.querySelector(".my_project");
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      slider.addEventListener('mousedown',(e)=>{
-        isDown = true;
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-        console.log(startX);
-      })
-
-      slider.addEventListener('mouseleave',()=>{
-        isDown = false;
-      })
-
-      slider.addEventListener('mouseup',()=>{
-        isDown = false
-    
-      })
-
-      slider.addEventListener('mousemove',(e)=>{
-        if(!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        console.log(x,startX);
-        const walk = x - startX;
-        slider.scrollLeft = scrollLeft - walk;
-      })
+      
+ 
     </script>
   </body>
 </html>
