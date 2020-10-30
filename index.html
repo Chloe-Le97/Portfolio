@@ -99,8 +99,34 @@
       </section>
       <section id="project">
         <div class="project_header">MY PROJECTS</div>
+        <div class="myBtnContainer">
+          <button class="btnfilter active" onclick="filterSelection('highlight')"> Highlights</button>
+          <button class="btnfilter" onclick="filterSelection('react')">ReactJS</button>
+          <button class="btnfilter" onclick="filterSelection('node')">NodeJS</button>
+          <button class="btnfilter" onclick="filterSelection('javascript')">Vanilla Javascript</button>
+        </div>
         <div class='my_project'>
-          <div class="project_container">
+          <div class="project_container highlight react node">
+            <div class="project_image">
+              <a href="https://fast-temple-45066.herokuapp.com/" target="_blank"><div class='project_title'>Phonebook</div></a>
+              <img src='./asset/phone.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Webapp development</div>
+              <div class="project_skills">
+                <div class="project_skill">ReactJS</div>
+                <div class="project_skill">NodeJS</div>
+                <div class="project_skill">Express</div>
+                <div class="project_skill">MongoDB</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/Fullstack-open-part3" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://fast-temple-45066.herokuapp.com/" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/Fullstack-open-part3" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container highlight react">
             <div class="project_image">
               <a href="https://instagram-clone-200fb.web.app/" target="_blank"><div class='project_title'>Instagram Clone</div></a>
               <img src='./asset/instagram.jpg' class="project_background"></img>
@@ -120,7 +146,30 @@
               </div>
             </div>
           </div>
-          <div class="project_container">
+          <div class="project_container highlight javascript">
+            <div class="project_image">
+              <a href="http://katherine-bakery.atwebpages.com/" target="_blank"><div class='project_title'>Katherine Bakery</div></a>
+              <img src='./asset/cake.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Web landing page</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML</div>
+                <div class="project_skill">CSS</div>
+                <div class="project_skill">Javascript</div>
+                <div class="project_skill">Figma</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/Katherine-Bakery" target="_blank"><img src='./asset/html-tag-icon.png'
+                    class="project_icon"></img></a>
+                <a href="http://katherine-bakery.atwebpages.com/" target="_blank"><img src='./asset/browser-icon.png'
+                    class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/Katherine-Bakery" target="_blank"><img src='./asset/paper-icon.png'
+                    class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container node">
             <div class="project_image">
               <a href="https://peaceful-peak-96689.herokuapp.com/" target="_blank"><div class='project_title'>Weather</div></a>
               <img src='./asset/weather.jpg' class="project_background"></img>
@@ -131,6 +180,7 @@
                 <div class="project_skill">NodeJS</div>
                 <div class="project_skill">Express</div>
                 <div class="project_skill">API</div>
+                <div class="project_skill">Heroku</div>
               </div>
               <div class="project_link">
                 <a href="https://github.com/Chloe-Le97/weather-NodeJS" target="_blank"><img src='./asset/html-tag-icon.png'
@@ -142,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="project_container">
+          <div class="project_container highlight react">
             <div class="project_image">
             <a href="https://chat-app-b62b2.web.app/" target="_blank">
               <div class='project_title'>Penguime</div>
@@ -167,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="project_container">
+          <div class="project_container highlight react">
             <div class="project_image">
               <a href="https://github.com/Chloe-Le97/crown-clothing" target="_blank"><div class='project_title'>Crown Clothing</div></a>
               <img src='./asset/clothing.jpg'class="project_background"></img>
@@ -190,30 +240,8 @@
               </div>
             </div>
           </div>
-          <div class="project_container">
-            <div class="project_image">
-              <a href="http://katherine-bakery.atwebpages.com/" target="_blank"><div class='project_title'>Katherine Bakery</div></a>
-              <img src='./asset/cake.jpg' class="project_background"></img>
-            </div>
-            <div class="project_des">
-              <div class="project_des_title">Web landing page</div>
-              <div class="project_skills">
-                <div class="project_skill">HTML</div>
-                <div class="project_skill">CSS</div>
-                <div class="project_skill">Javascript</div>
-                <div class="project_skill">Figma</div>
-              </div>
-              <div class="project_link">
-                <a href="https://github.com/Chloe-Le97/Katherine-Bakery" target="_blank"><img src='./asset/html-tag-icon.png'
-                    class="project_icon"></img></a>
-                <a href="http://katherine-bakery.atwebpages.com/" target="_blank"><img src='./asset/browser-icon.png'
-                    class="project_icon"></img></a>
-                <a href="https://github.com/Chloe-Le97/Katherine-Bakery" target="_blank"><img src='./asset/paper-icon.png'
-                    class="project_icon"></img> </a>
-              </div>
-            </div>
-          </div>
-          <div class="project_container">
+         
+          <div class="project_container highlight react">
             <div class="project_image">
               <a href="https://to-do-list-with-react.web.app/" target="_blank"><div class='project_title'>Finish me!</div></a>
               <img src='./asset/finnish.jpg' class="project_background"></img>
@@ -235,7 +263,140 @@
               </div>
             </div>
           </div>
-        
+
+          <div class="project_container react">
+            <div class="project_image">
+              <a href="https://github.com/Chloe-Le97/country" target="_blank"><div class='project_title'>Country</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Webapp development</div>
+              <div class="project_skills">
+                <div class="project_skill">ReactJS</div>
+                <div class="project_skill">Axios</div>
+                <div class="project_skill">API</div>
+                <div class="project_skill">CSS</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/country" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/country" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/country" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container node">
+            <div class="project_image">
+              <a href="https://github.com/Chloe-Le97/notes-app" target="_blank"><div class='project_title'>Note App</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Webapp development</div>
+              <div class="project_skills">
+                <div class="project_skill">NodeJS</div>
+                <div class="project_skill">Express</div>
+                <div class="project_skill">*******</div>
+                <div class="project_skill">******</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/notes-app" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/notes-app" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/notes-app" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container javascript">
+            <div class="project_image">
+              <a href="https://codepen.io/Chloeisme/pen/QWbrVXo" target="_blank"><div class='project_title'>To do list</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Webapp development</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML</div>
+                <div class="project_skill">CSS</div>
+                <div class="project_skill">Javascript</div>
+              </div>
+              <div class="project_link">
+                <a href="https://codepen.io/Chloeisme/pen/QWbrVXo" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/QWbrVXo" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/QWbrVXo" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container javascript">
+            <div class="project_image">
+              <a href="https://clever-jackson-bece0d.netlify.app/" target="_blank"><div class='project_title'>Weather</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Webapp development</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML</div>
+                <div class="project_skill">CSS</div>
+                <div class="project_skill">Javascript</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/Weather-forecast" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://clever-jackson-bece0d.netlify.app/" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://github.com/Chloe-Le97/Weather-forecast" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container javascript">
+            <div class="project_image">
+              <a href="https://codepen.io/Chloeisme/pen/VwvEBPg" target="_blank"><div class='project_title'>Wave</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Canvas</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML Canvas</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/Wave" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/VwvEBPg" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/bGVmMgY" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container javascript">
+            <div class="project_image">
+              <a href="https://codepen.io/Chloeisme/pen/jObdWPV" target="_blank"><div class='project_title'>Calculator</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Web development</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML</div>
+                <div class="project_skill">CSS</div>
+                <div class="project_skill">Javascript</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/Calculator/tree/master" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/jObdWPV" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/jObdWPV" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_container javascript">
+            <div class="project_image">
+              <a href="https://codepen.io/Chloeisme/pen/YzXabwv" target="_blank"><div class='project_title'>Clock</div></a>
+              <img src='./asset/instagram.jpg' class="project_background"></img>
+            </div>
+            <div class="project_des">
+              <div class="project_des_title">Web development</div>
+              <div class="project_skills">
+                <div class="project_skill">HTML</div>
+                <div class="project_skill">CSS</div>
+                <div class="project_skill">Javascript</div>
+              </div>
+              <div class="project_link">
+                <a href="https://github.com/Chloe-Le97/CLOCK" target="_blank"><img src='./asset/html-tag-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/YzXabwv" target="_blank"><img src='./asset/browser-icon.png' class="project_icon"></img></a>
+                <a href="https://codepen.io/Chloeisme/pen/YzXabwv" target="_blank"><img src='./asset/paper-icon.png' class="project_icon"></img> </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact">
@@ -267,6 +428,7 @@
       </section>
     </div>
     <script>
+      //Hamburger bar
       function onClickMenu() {
         document.getElementById("menu").classList.toggle("change");
         document.getElementById("nav").classList.toggle("changenav");
@@ -281,6 +443,48 @@
         document.getElementById("main").classList.remove("change-body");
         document.querySelector("body").classList.remove("change-bod");
       }
+      // Filter project 
+      filterSelection("highlight")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("project_container");
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementsByClassName("myBtnContainer");
+var btns = document.getElementsByClassName("btnfilter");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
     </script>
   </body>
 </html>

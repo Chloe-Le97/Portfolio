@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
   position: relative;
   top: 21rem;
   width: 100%;
-  height: 70rem;
+  height: 75rem;
   background-image: url("asset/mountain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -274,7 +274,7 @@ body::-webkit-scrollbar {
 }
 .project_header {
   position: relative;
-  top: 8.75rem;
+  top: 9.75rem;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -284,6 +284,7 @@ body::-webkit-scrollbar {
   background-color: white;
   box-shadow: -2px 8px 28px -11px rgba(41, 41, 41, 1);
   z-index: 1;
+  display: none;
 }
 .project_container:hover {
   transform: scale(1.07);
@@ -365,9 +366,37 @@ body::-webkit-scrollbar {
   width: 50px;
   height: 50px;
 }
+.myBtnContainer{
+  position: relative;
+  top: 10.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.btnfilter {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btnfilter:hover {
+  background-color: #ddd;
+}
+
+.btnfilter.active {
+  background-color: #666;
+  color: white;
+  box-shadow: -2px 8px 28px -11px rgba(41, 41, 41, 1);
+}
+.show {
+  display: block;
+}
+
 #contact {
   position: relative;
-  top: 12rem;
+  top: 5rem;
   width: 100%;
   /* height: max-content; */
   height: 60rem;
@@ -444,6 +473,7 @@ body::-webkit-scrollbar {
     font-size: 23px;
   }
   .my_project {
+    top: 14rem;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -472,6 +502,9 @@ body::-webkit-scrollbar {
   }
   .project_skill {
     padding: 1.5px;
+  }
+  #contact{
+    top: 13rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -505,6 +538,9 @@ body::-webkit-scrollbar {
     position: relative;
     top: 4rem !important;
   }
+  .myBtnContainer{
+    top: 2rem !important;
+  }
 }
 @media only screen and (max-width: 770px) {
   .change-bg {
@@ -535,24 +571,27 @@ body::-webkit-scrollbar {
   .my_project {
     width: 100%;
     position: relative;
-    top: 10rem;
+    top: 16rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 0;
     /* justify-items: start;
     align-content: flex-start; */
   }
+  .myBtnContainer{
+    top: 11.75rem;
+  }
 }
 @media only screen and (min-width: 1500px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
   .banner-title-container {
     width: 20%;
   }
   .my_project {
     position: relative;
-    top: 15rem;
+    top: 16rem;
     width: 95%;
     margin: 0 auto;
     display: grid;
@@ -561,5 +600,19 @@ body::-webkit-scrollbar {
     grid-row-gap: 50px;
     justify-items: center;
     align-items: center;
+  }
+  #project{
+    top: 14rem;
+    clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 92%);
+  }
+  #skills{
+    height: 65rem;
+    clip-path: polygon(0 0, 100% 18%, 100% 80%, 0% 100%);
+  }
+  .project_header{
+    top: 11.75rem;
+  }
+  .myBtnContainer{
+    top: 12.75rem;
   }
 }
