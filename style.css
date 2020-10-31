@@ -388,7 +388,7 @@ body::-webkit-scrollbar {
 .btnfilter.active {
   background-color: #666;
   color: white;
-  box-shadow: -2px 8px 28px -11px rgba(41, 41, 41, 1);
+  box-shadow: 2px 3px 25px -3px rgba(41,41,41,1);
 }
 .show {
   display: block;
