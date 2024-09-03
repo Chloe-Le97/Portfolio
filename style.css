@@ -264,22 +264,22 @@ body::-webkit-scrollbar {
   position: relative;
   top: 21rem;
   width: 100%;
-  height: 75rem;
+  height: 90rem;
   background-image: url("asset/mountain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 93%);
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 93%);
   text-align: center;
 }
 .project_header {
   position: relative;
-  top: 9.75rem;
+  top: 7.75rem;
   font-size: 2.5rem;
   font-weight: 600;
 }
 .project_container {
-  height: 18.125rem;
+  height: calc(100% - 57px);
   width: 23.125rem;
   background-color: white;
   box-shadow: -2px 8px 28px -11px rgba(41, 41, 41, 1);
@@ -326,6 +326,8 @@ body::-webkit-scrollbar {
   margin-top: 0.4375rem;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .project_des_title {
   color: black;
@@ -346,7 +348,7 @@ body::-webkit-scrollbar {
 }
 .my_project {
   position: relative;
-  top: 12rem;
+  top: 11rem;
   width: 90%;
   margin: 0 auto;
   /* overflow-x: scroll;
@@ -368,7 +370,7 @@ body::-webkit-scrollbar {
 }
 .myBtnContainer{
   position: relative;
-  top: 10.75rem;
+  top: 8.75rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
@@ -483,7 +485,7 @@ body::-webkit-scrollbar {
     align-items: center;
   }
   .project_container {
-    height: 18.125rem;
+    /* height: calc(100%-57px) ; */
     width: 20.125rem;
   }
 
@@ -507,7 +509,12 @@ body::-webkit-scrollbar {
     top: 13rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+	#project {
+	  height: 2500px !important;
+	}
+}
+@media only screen and (max-width: 770px) {
   #skills {
     position: relative;
     top: 17rem !important;
@@ -516,10 +523,10 @@ body::-webkit-scrollbar {
     clip-path: none;
   }
   #project {
+	/* height: 1400px !important; */
     position: relative;
     top: 13rem !important;
     width: 100%;
-    height: 2200px !important;
     clip-path: none;
   }
   #contact {
@@ -603,7 +610,7 @@ body::-webkit-scrollbar {
   }
   #project{
     top: 14rem;
-    clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0 92%);
+    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 92%);
   }
   #skills{
     height: 65rem;
